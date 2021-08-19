@@ -1,8 +1,7 @@
 @font-face {
     font-family: "ComfortaaMedium";
     src: url(fonts/Comfortaa-Medium.ttf);
-}
-
+} 
 
 * {
     padding: 0;
@@ -14,10 +13,12 @@
 .navbar {
     width: 100%;
     height: 25%;
-    background-color: rgb(155, 204, 99);
+    background-color: #fffab7;
     display: flex;
     justify-content: space-between;
-}
+    border-bottom: black;
+    border-style: groove;
+} 
 
 /* .navbar-img {
     width: 25%;
@@ -29,12 +30,15 @@
 .navbar p b {
     width: 25%;
     display: flex;
-    margin: 10px 10px 10px 20px;
+    margin: 10px 10px 10px 30px;
     text-shadow: #fafafa 5px 1px 4px;
     letter-spacing: 2px;
-    font-size: 1em;
-
+    font-size: 2em;
 }
+
+.navbar i {
+    margin: 1px 1px 1px 10px;
+} 
 
 .navbar-ul {
    width: 50%;
@@ -62,7 +66,7 @@
     text-decoration: none;
     color: inherit;
     letter-spacing: 0.5px;
-}
+} 
 
 .navbar-ul ul li a:after {
     content: "";
@@ -74,23 +78,66 @@
     bottom: -15px;
     transition: 0.3s;
 }
-
+ 
 .navbar-ul ul li a:hover:after {
     width: 100%;
 }
-
+ 
 .navbar-ul ul li:hover{
     font-size: 1.3rem;
     cursor: pointer;
     color: #004332;
 }
-
+ 
 section {
-    background-color: #fcfcda;
+    background-color: #ffe88b;
+}
+ 
+.cuerpo__logo {
+    height: 50vh;
+    width: 100vw;
+    text-align: center;
+    padding: 40px;
+} 
+
+.cuerpo__logo img {
+    width: 50%;
+    height: auto;    
+}
+ 
+.informacion__proyecto {
+    text-align: left;
+} 
+
+.informacion__proyecto h2 b {
+    padding: 5px 10px 0px 10px;
+    display: flex;
+}
+ 
+.informacion__proyecto p {
+    padding: 5px 10px 0px 10px;
+}
+ 
+.informacion__proyecto li {
+    padding: 5px 10px 0px 10px;
+}
+ 
+.subcuerpo__descripcion {
+    background-color: #ffb776;
+    height: 50vh;
+    width: 100vw;
 }
 
-.cuerpo__logo {
-    height: ;
+.subcuerpo__descripcion h2 b {
+    padding: 5px 10px 0px 10px;
+}
+ 
+.subcuerpo__descripcion p {
+    padding: 5px 10px 0px 10px;
+}
+
+.subcuerpo__descripcion li {
+    padding: 5px 10px 0px 10px;
 }
 
 .final__redes {
