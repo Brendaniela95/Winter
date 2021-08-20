@@ -11,8 +11,8 @@
 }
 
 .navbar {
-    width: 100%;
-    height: 25%;
+    width: 100vw;
+    height: 10vh;
     background-color: #fffab7;
     display: flex;
     justify-content: space-between;
@@ -31,7 +31,7 @@
     width: 25%;
     display: flex;
     margin: 10px 10px 10px 30px;
-    text-shadow: #fafafa 5px 1px 4px;
+    text-shadow: #f5e553 5px 1px 4px;
     letter-spacing: 2px;
     font-size: 2em;
 }
@@ -90,28 +90,32 @@
 }
  
 section {
+    height: 100vh;
+    width: 100vw;
     background-color: #ffe88b;
 }
  
 .cuerpo__logo {
-    height: 50vh;
-    width: 100vw;
-    text-align: center;
     padding: 40px;
+    height: 70vh;
+    width: 100vw;
+    text-align: center; 
 } 
 
 .cuerpo__logo img {
-    width: 50%;
-    height: auto;    
+    width: 45%;
+    height: auto;   
 }
  
 .informacion__proyecto {
-    text-align: left;
+    text-align: center;
+    height: 70vh;
+    width: 100vw;
 } 
 
 .informacion__proyecto h2 b {
+    text-align: center;
     padding: 5px 10px 0px 10px;
-    display: flex;
 }
  
 .informacion__proyecto p {
@@ -124,8 +128,11 @@ section {
  
 .subcuerpo__descripcion {
     background-color: #ffb776;
-    height: 50vh;
+    position: absolute;
     width: 100vw;
+    height: 60vh;
+    padding-top: 30px;
+    text-align: center;
 }
 
 .subcuerpo__descripcion h2 b {
@@ -136,23 +143,76 @@ section {
     padding: 5px 10px 0px 10px;
 }
 
+.subcuerpo__descripcion ul {
+    padding-left: 10px;
+}
 .subcuerpo__descripcion li {
     padding: 5px 10px 0px 10px;
 }
 
-.final__redes {
+.subcuerpo__firma p {
+    padding: 5px 10px 0px 10px;
+}
+
+.subcuerpo__firma--boton {
+    -webkit-border-radius: 22;
+    -moz-border-radius: 22;
+    border-radius: 22px;
+    color: #000000;
+    font-size: 17px;
+    background: #f5d142;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.subcuerpo__firma--boton:hover {
+    background: #faae3c;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #ff9c9c;
+    height: 100vh;
+    width: 100vw;
     display: flex;
+    position: static;
+    align-items: flex-end;
 }
 
-.final__redes h3 b{
-    display: inline-flex;
+.final__redes {
+    text-align: left;
+    padding-bottom: 80px;
+    width: 30vw;
+    height: auto;
+    z-index: 1;
 }
 
-.final__redes p i {
-    display: inline-flex;
+.final__redes h3 b {
+    padding: 5px 10px 20px 10px;
+}
+
+.final__redes p a i{
+    padding: 5px 10px 0px 10px;
+}
+
+.final__redes a {
+    text-decoration: none;
+    color: black;
 }
 
 .final__cuidado {
-    display: flex;
-    width: 45%;
+    text-align: left;
+    width: 60vw;
+    height: auto;
+    z-index: 2;
+    text-align: left;
+    padding-bottom: 122px;
+}
+
+.final__cuidado h3 b {
+    padding: 5px 10px 0px 10px;
+}
+
+.final__cuidado p i {
+    padding: 5px 10px 0px 10px;
 }
